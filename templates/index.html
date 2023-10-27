@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>YT Download - Watch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-red: #e50914;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+.container {
+    width: 1450px;
+    max-width: 76%;
+    margin: auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.ibb.co/Sxb7csr/back.jpg);
+    background-size: cover;
+    background-position: top;
+    border-bottom: 8px solid #444;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons span {
+    padding: 8px 20px;
+    border: 1.5px solid #555;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.btn {
+    padding: 8px 20px;
+    background-color: var(--color-red);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-white);
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #e50914c5;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 5rem;
+    color: var(--color-white);
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.content h3 {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.content p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.search {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    width: 400px;
+    height: 55px;
+    background-color: #0000006a;
+    outline: none;
+    border: 1.5px solid #222;
+    color: var(--color-white);
+}
+
+.search input:focus-within {
+    padding-left: 2rem;
+    color: var(--color-white);
+}
+
+.search input::placeholder {
+    font-size: 1.6rem;
+    padding-left: 20px;
+    font-weight: 500;
+    color: #999;
+}
+
+.btn-primary {
+    padding: 0.9rem 2rem;
+    font-size: 2.5rem;
+}
+
+.icon img {
+    max-width: 100%;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="navbar container">
+                <a href="#" class="logo"><img src= https://i.ibb.co/nc6k3HY/logo.png alt=""></a>
+                <div class="buttons">
+                    <span>English</span>
+                </div>
+            </div>
+            <div class="text container">
+                <div class="content">
+                    <h1>Download any video from YouTube without downloading any program.</h1>
+                    <p>The method is easy, post the link and click download.</p>
+                        <form action="/result" method="post" class="search">
+                            <input type="text" id="text" name="text" placeholder="Write a YouTube Vidoe link">
+                            <button type="submit" class="btn btn-primary">Download <i class="fa-solid fa-chevron-right"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
